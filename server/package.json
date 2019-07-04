@@ -1,0 +1,17 @@
+{
+  "name": "graphql-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cristian Muscalu <muscaiu@yahoo.com> (cristian.muscalu.net)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-graphql": "^0.8.0",
+    "graphql": "^14.4.1",
+    "lodash": "^4.17.11"
+  }
+}
