@@ -1,7 +1,7 @@
 http://localhost:5001/graphql
 
 {
-  book(id: "3") {
+  book(id: 3) {
     name
     genre
     id
@@ -10,7 +10,7 @@ http://localhost:5001/graphql
 
 * Relations
 {
-  book(id: "1") {
+  book(id: 1) {
     name
     genre
     id
@@ -23,6 +23,31 @@ http://localhost:5001/graphql
 }
 
 * Lists
+#1
+{
+  books{
+  	name
+	}
+}
+#2
+{
+  books{
+  	name
+    author{
+      name
+    }
+	}
+}
+#3
+{
+  authors{
+  	name
+    books{
+      name
+    }
+	}
+}
+#4
 {
 	author(id: 2){
   	name
