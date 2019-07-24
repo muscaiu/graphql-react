@@ -58,3 +58,11 @@ http://localhost:5001/graphql
     }
   }
 }
+
+* Mutations
+mutation{
+  addAuthor(name: "Adi", age: 30){
+    name
+    age
+  }
+}
