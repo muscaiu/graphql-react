@@ -2,9 +2,10 @@ const express = require('express');
 const graphqlHTTP = require('express-graphql');
 const mongoose = require('mongoose');
 const schema = require('./schema/schema');
+
 const app = express();
 
-mongoose.connect('mongodb://tyler:test123@ds353957.mlab.com:53957/graph-tutorial')
+mongoose.connect('mongodb://tyler:test123@ds353957.mlab.com:53957/graph-tutorial', { useNewUrlParser: true })
 mongoose.connection.once('open', () => {
   console.log('connected to mlab')
 })
